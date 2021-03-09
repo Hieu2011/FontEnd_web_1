@@ -10,7 +10,47 @@ function openCategory(evt, idName) {
     }
     document.getElementById(idName).style.display = 'block';
     evt.currentTarget.className += " active";
+    if (idName == "All") {
+        limitProduct();
+    }
 }
+
+function limitProduct() {
+    var i = 0;
+    var numItems = $('.product').length - 3;
+    $('.product').each(function() {
+        i++;
+        if (i > numItems) {
+
+            $(this).addClass("d-none");
+        }
+    });
+}
+$(document).ready(function() {
+    $('#btnAllWork').click(function(event) {
+        var options = {};
+        $('.d-none').toggle("bounce", options, 500);
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = ".product";
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 200, function() {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+
+    });
+});
 window.onload = function() {
     document.getElementById('btnAll').click();
+    limitProduct();
+
 };
