@@ -29,7 +29,7 @@ function limitProduct() {
 $(document).ready(function() {
     $('#btnAllWork').click(function(event) {
         var options = {};
-        $('.d-none').toggle("bounce", options, 500);
+        $('.d-none').toggle("puff", options, 500);
 
         // Prevent default anchor click behavior
         event.preventDefault();
