@@ -25,13 +25,14 @@ function limitProduct() {
             $(this).addClass("d-none");
         }
     });
+
 }
 
 
 $(document).ready(function() {
     $('#btnAllWork').click(function(event) {
         var options = {};
-        $('.d-none').toggle("puff", options, 500);
+        $('.d-none').toggle("explode", options, 500);
 
         // Prevent default anchor click behavior
         event.preventDefault();
@@ -75,5 +76,9 @@ $(document).ready(function() {
 window.onload = function() {
     document.getElementById('btnAll').click();
     limitProduct();
+    $(".title").css({ "left": "500px" }).animate({ "left": "0px" }, "slow");
+
+
+
 
 };

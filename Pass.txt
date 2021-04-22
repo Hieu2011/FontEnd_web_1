@@ -1,0 +1,27 @@
+- hp-backup.slack.com
+ user_name: hieupromen2011
+ pass: hieu@2011
+- gitlab.com
+ user_name: hieu2011
+ pass: hieu@2011
+- account google
+ user_name: hieupromen2011@gmail.com
+ pass: hieu@2011
+- mail.hp-backup.com
+ user_name: hieunt@hp-backup.com
+ pass: hpbvn123		
+- app.clickup.com
+ user_name: hieupromen2011@gmail.com
+ pass: Hieu@2011
+
+-account google 2:
+user_name: hieunguyentrung201198@gmail.com
+pass: hieu@2011	
+
+-ub
+useer_name : hieupc
+pass: 2011
+
+-svn
+user_name : hieupm
+pass: hieupm			 
